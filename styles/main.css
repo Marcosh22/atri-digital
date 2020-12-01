@@ -1,0 +1,427 @@
+:root {
+    --color-white:  #FFFFFF;
+    --color-beige:  #EDEEE4;
+    --color-green:  #278F52;
+    --color-red:    #FF1331;
+    --color-purple: #A41446;
+    --color-black:  #000000;
+}
+
+@font-face{
+    font-family: 'FuturaLT';
+    src: url('/fonts/FuturaLT-Light.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 300
+  } 
+  
+  @font-face{
+    font-family: 'FuturaLT';
+    src: url('/fonts/FuturaLT.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400
+  }
+  
+  @font-face{
+    font-family: 'FuturaLT';
+    src: url('/fonts/FuturaLT-Bold.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700
+  }
+  
+  @font-face{
+    font-family: 'FuturaLT';
+    src: url('/fonts/FuturaLT-ExtraBold.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 800
+  }
+  
+  @font-face{
+    font-family: 'FuturaLT';
+    src: url('/fonts/FuturaLT-Heavy.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 900
+  }
+  
+  /* Condensed */
+  @font-face{
+    font-family: 'FuturaLT Condensed';
+    src: url('/fonts/FuturaLT-CondensedLight.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 300
+  } 
+  
+  @font-face{
+    font-family: 'FuturaLT Condensed';
+    src: url('/fonts/FuturaLT-Condensed.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400
+  }
+  
+  @font-face{
+    font-family: 'FuturaLT Condensed';
+    src: url('/fonts/FuturaLT-CondensedBold.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700
+  }
+  
+  @font-face{
+    font-family: 'FuturaLT Condensed';
+    src: url('/fonts/FuturaLT-CondensedExtraBold.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 800
+  }
+  
+  /* Oblique */
+  @font-face{
+    font-family: 'FuturaLT Oblique';
+    src: url('/fonts/FuturaLT-LightOblique.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 300
+  } 
+  
+  @font-face{
+    font-family: 'FuturaLT Oblique';
+    src: url('/fonts/FuturaLT-Oblique.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400
+  }
+  
+  @font-face{
+    font-family: 'FuturaLT Oblique';
+    src: url('/fonts/FuturaLT-BoldOblique.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700
+  }
+  
+  @font-face{
+    font-family: 'FuturaLT Oblique';
+    src: url('/fonts/FuturaLT-ExtraBoldOblique.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 800
+  }
+  
+  @font-face{
+    font-family: 'FuturaLT Oblique';
+    src: url('/fonts/FuturaLT-HeavyOblique.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 900
+  }
+  
+  /* Condensed Oblique */
+  @font-face{
+    font-family: 'FuturaLT Condensed Oblique';
+    src: url('/fonts/FuturaLT-CondensedLightObl.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 300
+  } 
+  
+  @font-face{
+    font-family: 'FuturaLT Oblique';
+    src: url('/fonts/FuturaLT-CondensedOblique.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400
+  }
+  
+  @font-face{
+    font-family: 'FuturaLT Oblique';
+    src: url('/fonts/FuturaLT-CondensedBoldOblique.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700
+  }
+  
+  @font-face{
+    font-family: 'FuturaLT Oblique';
+    src: url('/fonts/FuturaLT-CondExtraBoldObl.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 800
+  }
+  
+  /* Book */
+  @font-face{
+    font-family: 'FuturaLT Book';
+    src: url('/fonts/FuturaLT-Book.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400
+  } 
+  
+  /* Book Oblique */
+  @font-face{
+    font-family: 'FuturaLT Book Oblique';
+    src: url('/fonts/FuturaLT-BookOblique.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400
+  }
+
+.has-color-white {
+    color: var(--color-white);
+}
+
+.has-bg-white {
+    background-color: var(--color-white);
+}
+
+.has-color-beige {
+    color: var(--color-beige);
+}
+
+.has-bg-beige {
+    background-color: var(--color-beige);
+}
+
+.has-color-green {
+    color: var(--color-green);
+}
+
+.has-bg-green {
+    background-color: var(--color-green);
+}
+
+.has-color-red {
+    color: var(--color-red);
+}
+
+.has-bg-red {
+    background-color: var(--color-red);
+}
+
+.has-color-red {
+    color: var(--color-purple);
+}
+
+.has-bg-purple {
+    background-color: var(--color-purple);
+}
+
+.has-color-black {
+    color: var(--color-black);
+}
+
+.has-bg-black {
+    background-color: var(--color-black);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+body {
+    background-color: var(--color-beige);
+    padding: 0;
+    margin: 0;
+    font-family: 'FuturaLT';
+    font-size: 16px;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 2.3rem;
+}
+
+h2 {
+  font-family: 'FuturaLT Book';
+  font-size: 2.5rem;
+  margin: 50px 0;
+  line-height: 1.1em;
+}
+
+h2 > strong {
+  font-family: 'FuturaLT';
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.owl-carousel .owl-stage {
+  display: flex;
+}
+
+.owl-carousel .owl-stage-outer {
+  overflow: hidden !important;
+  justify-content: center;
+}
+
+.owl-theme .owl-nav {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  pointer-events: none;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  display: block;
+  color: transparent;
+  display: inline-block;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  z-index: 999;
+  pointer-events: all;
+}
+
+.owl-theme .owl-nav .owl-prev {
+  background-image: url("/images/arrow_left.png");
+  left: -60px;
+}
+
+.owl-theme .owl-nav .owl-next {
+  background-image: url("/images/arrow_right.png");
+  right: -60px;
+}
+
+.owl-theme .owl-nav.disabled {
+  display: none;
+}
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  margin-top: 5px;
+}
+
+.owl-theme .owl-dots.disabled {
+  display: none;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #e20416;
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 6vw;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 30px 0;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .owl-theme .owl-nav .owl-prev {
+    left: -5px;
+  }
+  
+  .owl-theme .owl-nav .owl-next {
+    right: -5px;
+  }
+
+  .owl-theme .owl-nav [class*="owl-"] {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    margin: 30px 0;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .owl-theme .owl-nav .owl-prev {
+    left: -30px;
+  }
+  
+  .owl-theme .owl-nav .owl-next {
+    right: -30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 30px 0;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+    margin: 40px 0;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+}

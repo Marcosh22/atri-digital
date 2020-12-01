@@ -2,6 +2,7 @@
   "name": "atri-digital",
   "version": "0.1.0",
   "private": true,
+  "engines" : { "node" : "13.10.0" },
   "scripts": {
     "dev": "next dev -p 3333",
     "build": "next build",

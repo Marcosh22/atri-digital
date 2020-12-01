@@ -495,9 +495,15 @@ function Home ({ products }) {
 }
 
 export async function getStaticProps() {
-    const products_res = await fetch('https://atri-digital.herokuapp.com/api/products');
-    const products = await products_res.json();
+    let products;
 
+    try {
+        const products_res = await fetch('https://atri-digital.herokuapp.com/api/products');
+        products = await products_res.json();
+    } catch(err) {
+        products = { categories: [] }
+    }
+   
     return {
         props: { products }
     }

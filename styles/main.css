@@ -236,6 +236,11 @@ body {
     font-size: 16px;
 }
 
+main {
+  background: url('/images/graphism.png') repeat-y center center;
+  background-size: 100% auto;
+}
+
 h1 {
     margin: 0;
     font-weight: 800;

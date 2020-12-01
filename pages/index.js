@@ -304,7 +304,7 @@ function Home ({ products }) {
 
     async function searchProducts() {
         //setLoading(true);
-        const products_res = await fetch('http://localhost:3333/api/products?q='+searchTerm);
+        const products_res = await fetch('https://atri-digital.herokuapp.com/api/products?q='+searchTerm);
         const products = await products_res.json();
 
         let products_count = 0;
@@ -495,7 +495,7 @@ function Home ({ products }) {
 }
 
 export async function getStaticProps() {
-    const products_res = await fetch('http://localhost:3333/api/products');
+    const products_res = await fetch('https://atri-digital.herokuapp.com/api/products');
     const products = await products_res.json();
 
     return {

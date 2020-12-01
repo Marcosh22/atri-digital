@@ -303,7 +303,7 @@ function Home ({ products }) {
     }
 
     async function searchProducts() {
-        //setLoading(true);
+        setLoading(true);
         const products_res = await fetch('https://atri-digital.herokuapp.com/api/products?q='+searchTerm);
         const products = await products_res.json();
 
@@ -317,7 +317,7 @@ function Home ({ products }) {
 
         setProductsCount(products_count);
         setCategories(products.categories);
-        setLoading(false);
+        setTimeout(() => {setLoading(false)}, 500);
     }
 
     return (
